@@ -26,7 +26,7 @@ export default function LoginForm() {
   return (
     <div className={styles.headerForm}>
       <h1 className={globalStyles.h1}>Bienvenue chez nous ! </h1>
-        <br />
+        <hr />
         <h2 className={globalStyles.h2}>Connectez-vous</h2>
         <form action="submit" onSubmit={handleSubmit}>
             <input
