@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import globalStyles from "../../../index.module.css"
 import styles from "./LoginForm.module.css"
 import { BsPersonCircle } from "react-icons/bs";
+import { IoChevronForward } from "react-icons/io5";
 
 
 export default function LoginForm() {
@@ -25,7 +26,7 @@ export default function LoginForm() {
         
         // render
   return (
-    <div>
+    <div className={styles.loginForm}>
       <div className={styles.headerForm}>
         <h1 className={globalStyles.h1}>Bienvenue chez nous ! </h1>
           <hr />
@@ -41,10 +42,11 @@ export default function LoginForm() {
              placeholder="Entrez votre prénom"
              required
              />
-              <button type="submit" >
-                  Accédez à mon espace
-              </button>
           </div>
+              <button className={styles.buttonWithIcon}>
+                <span> Accédez à mon espace </span>
+                <IoChevronForward  className={styles.colorTextButton}/>
+              </button>
         </form>
     </div>
   )
