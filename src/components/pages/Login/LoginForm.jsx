@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom";
 import globalStyles from "../../../index.module.css"
 import styles from "./LoginForm.module.css"
+import { BsPersonCircle } from "react-icons/bs";
 
 
 export default function LoginForm() {
@@ -24,11 +25,15 @@ export default function LoginForm() {
         
         // render
   return (
-    <div className={styles.headerForm}>
-      <h1 className={globalStyles.h1}>Bienvenue chez nous ! </h1>
-        <hr />
-        <h2 className={globalStyles.h2}>Connectez-vous</h2>
+    <div>
+      <div className={styles.headerForm}>
+        <h1 className={globalStyles.h1}>Bienvenue chez nous ! </h1>
+          <hr />
+          <h2 className={globalStyles.h2}>Connectez-vous</h2>
+      </div>
         <form action="submit" onSubmit={handleSubmit}>
+          <div className={styles.inputWithIcon}>
+            <BsPersonCircle className="icon"/>
             <input
              value={inputValue}
              onChange={handleChange}
@@ -39,6 +44,7 @@ export default function LoginForm() {
               <button type="submit" >
                   Accédez à mon espace
               </button>
+          </div>
         </form>
     </div>
   )
