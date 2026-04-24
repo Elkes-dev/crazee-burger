@@ -1,9 +1,13 @@
 import { useState } from "react"
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import globalStyles from "../../../index.module.css"
 import styles from "./LoginForm.module.css"
+import stylesButton from "../../PrimaryButton/PrimaryButton.module.css"
 import { BsPersonCircle } from "react-icons/bs";
 import { IoChevronForward } from "react-icons/io5";
+import TextInput from "../../TextInput/TextInput";
+import PrimaryButton from "../../PrimaryButton/PrimaryButton";
+
 
 
 export default function LoginForm() {
@@ -32,21 +36,21 @@ export default function LoginForm() {
           <hr />
           <h2 className={globalStyles.h2}>Connectez-vous</h2>
       </div>
-        <form action="submit" onSubmit={handleSubmit}>
-          <div className={styles.inputWithIcon}>
-            <BsPersonCircle className="icon"/>
-            <input
-             value={inputValue}
-             onChange={handleChange}
-             type="text"
-             placeholder="Entrez votre prénom"
-             required
-             />
+        <form  onSubmit={handleSubmit}>
+          <div>
+            <TextInput 
+              value={inputValue}
+              onChange={handleChange}
+              placeholder={"Entrez votre prénom"}
+              required
+              Icon={<BsPersonCircle />}
+            />
           </div>
-              <button className={styles.buttonWithIcon}>
-                <span> Accédez à mon espace </span>
-                <IoChevronForward  className={styles.colorTextButton}/>
-              </button>
+             <PrimaryButton
+                className={stylesButton.buttonWithIcon}
+                label={"Accédez à mon espace" }
+                Icon={<IoChevronForward />}
+             />
         </form>
     </div>
   )
