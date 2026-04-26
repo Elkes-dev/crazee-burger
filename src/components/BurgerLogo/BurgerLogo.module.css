@@ -1,24 +1,25 @@
-.title{
-       display: flex;
-       flex-direction: row;
-    justify-content: center;
+.logoWrapper{
+    display: flex;
     align-items: center;
-    /* display: inline; */
-    text-align: center;
-    font-size: 4em;
-    line-height: 1em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+    transform: scale(2.5);
 }
 
-.title span{
-        color: #FFA01B;
+
+.title{
+    color: var(--color-primary);
+    display: inline;
+    text-align: center;
+    font-size: var(--font-size-P4);
+    line-height: 1em;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: "Amatic Sc", 'cursive';
 }
 
 .logo{
     object-fit:contain;
-    width:  150px;
-    
-    
+    object-position: center;
+    height: 60px;
+    margin: 0 calc(var(--grid-unit ) / 2);
 }

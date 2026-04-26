@@ -34,7 +34,7 @@ export default function LoginForm() {
       <div className={styles.headerForm}>
         <h1 className={globalStyles.h1}>Bienvenue chez nous ! </h1>
           <hr />
-          <h2 className={globalStyles.h2}>Connectez-vous</h2>
+        <h2 className={globalStyles.h2}>Connectez-vous</h2>
       </div>
         <form  onSubmit={handleSubmit}>
           <div>

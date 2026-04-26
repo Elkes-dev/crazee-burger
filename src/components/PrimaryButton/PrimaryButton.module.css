@@ -2,17 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: var(--spacing-xs);
     width: 100%;
     margin: 0 auto;
     border: 1px;
-    border-radius: 5px;
-    padding: 1em;
+    border-radius: var(--radius-round);
+    padding: var(--spacing-sm);
     background-color: #FF9F1B;
-    color: #ffff;
+    color: var(--color-white);
     font-family: arial;
     font-weight: bold;
-    font-size: 10px;
+    font-size: var(--font-size-XXS);
 }
 
 .icon{
