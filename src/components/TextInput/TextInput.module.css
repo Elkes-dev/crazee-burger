@@ -1,0 +1,29 @@
+.inputWithIcon{
+    background-color: var(--color-white);
+    border-radius: var(--radius-round);
+    padding: var(--spacing-sm);
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-XXS);
+}
+
+.input{
+    border: none;
+    font-size: var(--font-size-P0);
+    color: var(--color-dark);
+    flex: 1;
+}
+
+.input::placeholder{
+    
+    color: var(--color-greyMedium);
+}
+
+.icon{
+    font-size: var(--font-size-P0);
+    margin-right: var(--spacing-xs);
+    color: var(--color-greySemiDark);
+}

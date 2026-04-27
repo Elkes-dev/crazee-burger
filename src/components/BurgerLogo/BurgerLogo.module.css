@@ -1,0 +1,25 @@
+.logoWrapper{
+    display: flex;
+    align-items: center;
+    transform: scale(2.5);
+}
+
+
+.title{
+    color: var(--color-primary);
+    display: inline;
+    text-align: center;
+    font-size: var(--font-size-P4);
+    line-height: 1em;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: "Amatic Sc", 'cursive';
+}
+
+.logo{
+    object-fit:contain;
+    object-position: center;
+    height: 60px;
+    margin: 0 calc(var(--grid-unit ) / 2);
+}
