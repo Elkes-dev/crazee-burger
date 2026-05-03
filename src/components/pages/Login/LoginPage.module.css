@@ -23,5 +23,8 @@
     z-index: -1;
 }
 
+.logoLoginPage{
+    transform: scale(2.5);
+}
 
 

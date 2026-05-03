@@ -9,7 +9,7 @@ export default function LoginPage(){
         <div 
             className={styles.mainContainer}
         >
-            <BurgerLogo />
+            <BurgerLogo  className={styles.logoLoginPage}/>
             <LoginForm />
         </div>
     )
