@@ -1,4 +1,4 @@
-import styles from "../order/Main.module.css"
+import styles from "../Main/Main.module.css"
 
 export default function Main() {
   return (

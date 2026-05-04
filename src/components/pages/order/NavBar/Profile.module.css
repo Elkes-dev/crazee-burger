@@ -1,0 +1,15 @@
+.rightSide{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.picture {
+    display: flex;
+    height: 100%;
+}
