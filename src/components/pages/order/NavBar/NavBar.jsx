@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
        <nav className={styles.navBar}>
             <div className={styles.leftSide}>
-                <BurgerLogo />
+                <BurgerLogo  onClick={ () => window.location.reload()}/>
             </div>
             <Profile username={username} />
         </nav>
