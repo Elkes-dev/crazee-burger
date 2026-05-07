@@ -1,0 +1,14 @@
+.navBar{
+    background-color: var(--color-white);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.leftSide{
+    cursor: pointer;
+}

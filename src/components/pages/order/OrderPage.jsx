@@ -1,20 +1,22 @@
-import { Link, useParams } from 'react-router-dom';
 import styles from "../order/OrderPage.module.css"
+import NavBar from './NavBar/NavBar';
+import Main from './Main/Main';
+
 
 export default function OrderPage() {
 
   //state 
-const {username} = useParams()
+
 
   //comportements
 
   //render
   return (
-    <div>
-      <h1 className={styles.title}>Bonjour {username}</h1>
-      <Link to="/">
-        <button>Deconnexion</button>
-      </Link>
+    <div className={styles.page}>
+      <div className={styles.container}>
+         <NavBar  />
+         <Main />
+      </div>
     </div>
   )
 }
