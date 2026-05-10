@@ -1,0 +1,37 @@
+.card{
+    width: 240px;
+    height: 330px;
+    border-radius: 15px;
+    box-shadow: -8px 8px 20px 0px rgb(0 0 0 / 20%);
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image{
+    width: 200px;
+    height: 145px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.info{
+    width: 200px;
+    height: 110px;
+    padding: 0 5px 5px 5px;
+}
+.info .title{
+    font-family: 'AMATIC SC', cursive;
+    font-weight: var(----font-weight-bold);
+    font-size: var(--font-size-P4);
+    line-height: 100%;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.infoText{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}

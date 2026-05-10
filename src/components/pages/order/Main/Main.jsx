@@ -1,5 +1,5 @@
 import styles from "../Main/Main.module.css"
-import Cards from "./Cards/Cards.jsx"
+import Menu from "./Menu/Menu.jsx"
 
 export default function Main() {
 
@@ -9,7 +9,7 @@ export default function Main() {
           <div className={styles.basket}>
             Basket
           </div>
-          <Cards />
+          <Menu />
      </main>
   )
 }

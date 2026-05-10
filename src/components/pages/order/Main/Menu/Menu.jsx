@@ -1,8 +1,8 @@
-import styles from "../Cards/Cards.module.css"
+import styles from "../Menu/Menu.module.css"
 import Card from "./Card"
 
 
-export default function Cards() {
+export default function Menu() {
   return (
     <div className={styles.menuCards}>
            <Card />
