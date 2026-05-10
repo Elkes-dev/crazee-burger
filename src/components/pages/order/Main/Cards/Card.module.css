@@ -1,5 +1,7 @@
 .card{
     width: 240px;
     height: 330px;
-    background-color: purple;
+    border-radius: 15px;
+    box-shadow: -8px 8px 20px 0px rgb(0 0 0 / 20%);
+    background-color: var(--color-white);
 }
