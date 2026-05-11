@@ -1,17 +1,17 @@
 import styles from "../Menu/ProductCard.module.css";
 
 
-export default function Card({title, imageSource, price}) {
+export default function ProductCard({title, imageSource, price}) {
 
   return (
             <div className={styles.card} >
-                <div>
+                <div className={styles.imageContainer}>
                     <img src={imageSource}  alt="produit menu" className={styles.image} />
                 </div>
                 <div className={styles.info}>
                     <div className={styles.title}>{title}</div>
                     <div className={styles.infoText}>
-                        <div className={styles.prix}>{price}</div>
+                        <div className={styles.price}>{price}</div>
                         <button className={styles.addButton}>
                             Ajouter
                         </button>

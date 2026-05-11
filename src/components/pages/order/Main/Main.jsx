@@ -7,7 +7,7 @@ export default function Main() {
   return (
      <main className={styles.main}>
           <div className={styles.basket}>
-            Basket
+            
           </div>
           <Menu />
      </main>
