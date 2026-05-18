@@ -1,3 +1,4 @@
+import { formatPrice } from "../../../../../utils/maths";
 import styles from "../Menu/ProductCard.module.css";
 
 
@@ -11,7 +12,7 @@ export default function ProductCard({title, imageSource, price}) {
                 <div className={styles.info}>
                     <div className={styles.title}>{title}</div>
                     <div className={styles.infoText}>
-                        <div className={styles.price}>{price}</div>
+                        <div className={styles.price}>{formatPrice(price)}</div>
                         <button className={styles.addButton}>
                             Ajouter
                         </button>
