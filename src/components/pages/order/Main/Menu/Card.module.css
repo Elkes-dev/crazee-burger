@@ -1,0 +1,74 @@
+.card{
+    width: 100%;
+    max-width: 240px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: -8px 8px 20px 0px rgb(0 0 0 / 20%);
+    background-color: var(--color-white);
+    display: grid;
+    grid-template-rows: 65% 1fr;
+    padding:20px;
+    padding-bottom: 10px;
+}
+
+.imageContainer{
+    
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 20px;
+}
+.info{
+    display:grid;
+    grid-template-rows: auto 1fr;
+       
+}
+.info .title{
+    font-family:'Amatic SC', cursive;
+    font-size: var(--font-size-P4);
+    font-weight: var(--font-weight-bold);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.infoText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  /*  padding: 10px 20px 10px 20px;*/
+}
+
+.price{
+    width: 95px;
+    color: var(--color-primary);
+}
+
+
+
+.addButton{
+    padding: 12px;
+    background-color: orange;
+    border: 1px;
+    border-radius: 5px;
+    color: white;
+    width: 50%;
+    height: 38px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+}
+
+.addButton:hover{
+    background-color: white;
+    color:orange;
+    border: 1px solid orange;
+}
+

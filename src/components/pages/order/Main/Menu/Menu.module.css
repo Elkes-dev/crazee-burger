@@ -1,0 +1,7 @@
+.menuCards{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 50px 50px 150px;
+    overflow-y: scroll;
+    gap: 40px;
+}
