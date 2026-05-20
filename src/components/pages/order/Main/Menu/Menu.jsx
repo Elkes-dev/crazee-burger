@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { fakeMenu2 } from "../../../../../fakeData/fakeMenu";
 import styles from "../Menu/Menu.module.css"
-import ProductCard from "./ProductCard"
+import Card from "./Card"
+import { formatPrice } from "../../../../../utils/maths";
 
 
 export default function Menu() {
@@ -10,12 +11,12 @@ export default function Menu() {
 
   return (
     <div className={styles.menuCards}>
-      {menu.map((produit) =>(
-           <ProductCard
-              key={produit.id} 
-              title={produit.title}
-              imageSource={produit.imageSource} 
-              price={produit.price} /> 
+      {menu.map(({id, title, imageSource, price}) =>(
+           <Card
+              key={id} 
+              title={title}
+              imageSource={imageSource} 
+              leftContent={formatPrice(price)} /> 
       ))}
     </div>
   )
